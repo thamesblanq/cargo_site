@@ -7,22 +7,22 @@ const Header = () => {
 
   
   return (
-    <header className="flex w-full items-center justify-between md:px-8 h-[80px]">
-        <h1 className='text-purple-600 text-2xl cursor-pointer font-bold ml-4'>Cargo</h1>
+    <header className="flex w-full items-center justify-between md:px-8 h-[10vh]">
+        <h1 className='text-[#5A57FF]  text-2xl cursor-pointer font-bold ml-4'>Cargo</h1>
 
         <div className='hidden md:flex gap-10 px-4'>
-            <a href="#" className='dark:text-white text-black cursor-pointer relative after:h-[3px] after:bg-purple-600 after:absolute after:-bottom-[8px] after:left-0 after:content-[""] after:rounded-lg hover:after:w-full px-4'>Home</a>
+            <a href="#" className='text-gray-500 cursor-pointer relative after:h-[3px] after:bg-[#5A57FF]   after:absolute after:-bottom-[8px] after:left-0 after:content-[""] after:rounded-lg hover:after:w-full'>Home</a>
 
-            <a href="#" className='dark:text-white text-black cursor-pointer after:h-[3px] after:bg-purple-600 after:absolute after:-bottom-[8px] after:left-0 after:content-[""] after:rounded-lg hover:after:w-full relative px-4'>About</a>
+            <a href="#" className='text-gray-500 cursor-pointer after:h-[3px] after:bg-[#5A57FF]   after:absolute after:-bottom-[8px] after:left-0 after:content-[""] after:rounded-lg hover:after:w-full relative'>About</a>
 
-            <a href="#" className='dark:text-white text-black cursor-pointer after:h-[3px] after:bg-purple-600 after:absolute after:-bottom-[8px] after:left-0 after:content-[""] after:rounded-lg hover:after:w-full relative px-4'>Services</a>
+            <a href="#" className='text-gray-500 cursor-pointer after:h-[3px] after:bg-[#5A57FF]   after:absolute after:-bottom-[8px] after:left-0 after:content-[""] after:rounded-lg hover:after:w-full relative'>Services</a>
 
-            <a href="#" className='dark:text-white text-black cursor-pointer after:h-[3px] after:bg-purple-600 after:absolute after:-bottom-[8px] after:left-0 after:content-[""] after:rounded-lg hover:after:w-full relative px-4'>Contact</a>
+            <a href="#" className='text-gray-500 cursor-pointer after:h-[3px] after:bg-[#5A57FF]   after:absolute after:-bottom-[8px] after:left-0 after:content-[""] after:rounded-lg hover:after:w-full relative'>Contact</a>
         </div>
 
-        <button className='hidden md:block px-4 py-2 text-purple-600 border border-purple-600 rounded-lg hover:text-white hover:bg-purple-600 font-bold'>Login</button>
+        <button className='hidden md:block px-4 py-2 text-[#5A57FF]  border border-[#5A57FF]  rounded-lg hover:text-white hover:bg-[#5A57FF] font-bold'>Login</button>
 
-        <FaBars className="block md:hidden dark:text-white text-black font-bold text-3xl hover:text-purple-600 cursor-pointer mr-4" onClick={() => setShow((prev) => !prev)}/>
+        <FaBars className="block md:hidden dark:text-gray-700 text-gray-500 font-bold text-3xl hover:text-[#5A57FF]  cursor-pointer mr-4" onClick={() => setShow((prev) => !prev)}/>
         {
           show &&  <Dropdown 
             setShow={setShow}
