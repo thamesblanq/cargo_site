@@ -6,15 +6,16 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
-  let count = 5;
-  const countdown = () => {
+  
+
+  useEffect(()=> {
+      setTimeout(() => {
+        let count = 5;
+        const countdown = () => {
           for (let i = 0; i <= count; i++){
             console.log(i);
           }
   }
-
-  useEffect(()=> {
-      setTimeout(() => {
         countdown()
         setIsLoading(true);
       },5000);//counting for five seconds
