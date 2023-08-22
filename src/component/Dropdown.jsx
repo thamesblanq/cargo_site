@@ -2,7 +2,7 @@ import { FaTimes } from "react-icons/fa";
 
 const Dropdown = ({ setShow }) => {
   return (
-    <div className="md:hidden flex flex-col gap-4 bg-gray-500 absolute top-0 w-full h-full px-4 mx-auto z-50">
+    <div className="md:hidden flex flex-col gap-4 bg-gray-500 absolute top-0 right-0 w-full h-full px-4 z-50 overflow-hidden">
         <FaTimes className="font-semibold text-primary  text-5xl mt-2 mr-4 cursor-pointer absolute right-0 top-2 hover:text-red-500" onClick={() => setShow((prev) => !prev)} />
         <nav className="flex flex-col gap-4 mt-16 items-center">
             <ul><li className="dark:text-white cursor-pointer hover:font-bold font-poppins">About</li></ul>

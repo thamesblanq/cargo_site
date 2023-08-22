@@ -12,6 +12,9 @@ export default {
       fontFamily: {
         poppins: ['Poppins'],
         roboto: ['Roboto'],
+      },
+      backgroundImage: {
+        'background': "url('/src/cargo-images/background-cargo.jpg')"
       }
     },
   },
