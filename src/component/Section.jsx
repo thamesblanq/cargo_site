@@ -10,17 +10,17 @@ import upMid from '../cargo-images/up-mid.png';
 const Section = () => {
   return (
     <section className="w-full flex items-center justify-evenly flex-col md:flex-row relative md:h-[90vh] pt-6">
-        <div className='h-[80vh] md:h-[50%] flex flex-col items-start justify-center'>
+        <div className='h-[80vh] md:h-auto flex flex-col items-start justify-center'>
             <p className="text-gray-500 text-sm mb-2 font-poppins">-- Africa's #1 Courier Service --</p>
             <h1 className="text-[#5A57FF] text-4xl md:text-6xl font-bold mb-2 font-poppins w-full md:w-[80%]">Cargo Delivery Solutions</h1>
             <p className="text-gray-500 text-xl mb-4 font-poppins">Delivering dreams, one package at a time.</p>
             <Button />
         </div>
 
-        <div className='relative h-[80vh] md:h-[50%] flex flex-row items-center justify-center mt-32 md:mt-0 mb-4 md:mb-0'>
+        <div className='relative h-[80vh] md:h-auto flex flex-row items-center justify-center mt-32 md:mt-0 mb-4 md:mb-0'>
             <img src={hPic} className=''></img>
-            <img src={upLeft} className='absolute -top-[30px] md:-top-[90px] -left-[50px]'></img>
-            <img src={downRight} className='absolute -bottom-0 md:-bottom-[90px] right-0'></img>
+            <img src={upLeft} className='absolute -top-[5px] -left-[10px] md:-top-[50px] md:-left-[40px]'></img>
+            <img src={downRight} className='absolute -bottom-0 md:-bottom-[10px] right-0'></img>
         </div>
 
         <img src={leftBelow} className='absolute left-[40px] bottom-[50px]'></img>

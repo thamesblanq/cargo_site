@@ -3,10 +3,10 @@ import { FaDiscord, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"
 
 const Footer = () => {
   return (
-    <footer className="w-full mt-8 p-8">
+    <footer className="w-full mt-4">
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4 place-content-center content-center">
 
-            <div className="flex flex-row justify-around items-center">
+            <div className="flex justify-around items-start">
 
                 <div className="flex flex-col gap-4">
                     <h1 className="text-primary font-bold font-poppins">Cargo</h1>
@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
 
 
-            <div className="flex flex-row justify-around items-center">
+            <div className="flex justify-around items-start">
 
                 <div>
                     <h1 className="font-bold text-sm text-black mb-4">About Us</h1>
