@@ -43,9 +43,9 @@ const Content = () => {
       </section>
 
       <section className='hidden w-full my-8 md:flex items-center justify-center h-screen'>
-        <div className='hidden md:flex items-center justify-center gap-8 bg-primary w-[80%] rounded-lg px-8 py-4 relative'>
-            <div className='relative z-10'>
-              <img src={phone}></img>
+        <div className='hidden md:flex items-center justify-center gap-8 bg-primary w-[80%] rounded-lg px-8 py-4 relative h-[70%] overflow-hidden'>
+            <div className='relative z-10 h-auto w-[50%]'>
+              <img src={phone} className='block absolute -bottom-[240px] left-[100px]'></img>
             </div>
             
             <div className='w-[50%]'>
@@ -81,9 +81,9 @@ const Content = () => {
       </section>
 
       <section className='w-full px-4 mt-24'>
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-16 md:w-[80%] mx-auto place-content-center'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 md:w-[80%] mx-auto place-content-center'>
 
-          <div className='flex items-center justify-center flex-col rounded-lg p-8'>
+          <div className='flex items-center justify-center flex-col rounded-lg p-8 h-screen md:h-auto'>
             <h1 className='text-primary font-bold text-sm md:text-xl mb-2 font-poppins'>What makes us stand out</h1>
             <p className='text-xs md:text-sm mb-2 font-poppins'>Here are few reasons why you should opt for our services ahead of others.</p>
             <button className='text-[#5A57FF] flex justify-around items-center px-2 text-xs md:text-sm md:p-4 border-2 gap-2 rounded-lg border-[#5A57FF] hover:translate-y-3 duration-500 ease-in-out'>Read More<FaBook /></button>
@@ -141,7 +141,7 @@ const Content = () => {
         </div>
       </section>
 
-      <section className='bg-[#FAF9FF] w-full mt-16 pt-8'>
+      <section className='bg-[#FAF9FF] w-full mt-16 pt-8 px-8 relative'>
         <h1 className='flex items-center justify-center text-primary font-bold text-2xl'>What Our Clients Say About Us</h1>
         <Review />
       </section>

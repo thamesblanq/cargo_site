@@ -94,9 +94,9 @@ const Card = () => {
 
 
   return (
-    <div className="carousel w-full relative mt-8">
+    <div className="carousel w-full mt-8 h-[80%]">
         <ul className="flex items-center overflow-x-auto justify-start w-full gap-8 px-4 scrollbar-hide scroll-smooth" ref={content}>
-            {obj.map(item => <li key={item.id} className="w-[800px] h-auto rounded-xl hover:scale-110 cursor-pointer duration-500 ease-in-out shadow-xl">
+            {obj.map(item => <li key={item.id} className="w-[800px] h-auto rounded-xl hover:scale-105 cursor-pointer duration-500 ease-in-out shadow-xl">
                 <div>
                     <img src={item.img}></img>
                 </div>
