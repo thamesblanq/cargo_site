@@ -11,9 +11,9 @@ const Section = () => {
   return (
     <section className="w-full flex items-center justify-evenly flex-col md:flex-row relative md:h-[90vh] pt-6">
         <div className='h-[80vh] md:h-[50%] flex flex-col items-start justify-center'>
-            <p className="text-gray-500 text-sm mb-2">-- Africa's #1 Courier Service --</p>
-            <h1 className="text-[#5A57FF] text-4xl md:text-7xl font-bold mb-2 w-full md:w-[80%]">Cargo Delivery Solutions</h1>
-            <p className="text-gray-500 text-xl mb-4">Delivering dreams, one package at a time.</p>
+            <p className="text-gray-500 text-sm mb-2 font-poppins">-- Africa's #1 Courier Service --</p>
+            <h1 className="text-[#5A57FF] text-4xl md:text-6xl font-bold mb-2 font-poppins w-full md:w-[80%]">Cargo Delivery Solutions</h1>
+            <p className="text-gray-500 text-xl mb-4 font-poppins">Delivering dreams, one package at a time.</p>
             <Button />
         </div>
 

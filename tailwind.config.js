@@ -9,8 +9,14 @@ export default {
       colors: {
         'primary': '#5A57FF',
       },
+      fontFamily: {
+        poppins: ['Poppins'],
+        roboto: ['Roboto'],
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }
 
