@@ -94,9 +94,9 @@ const Card = () => {
 
 
   return (
-    <div className="carousel w-full mt-8 h-[70%]">
-        <ul className="grid  grid-cols-3 md:grid-cols-3 md:grid-rows-1 overflow-x-auto h-[90%] justify-start w-full gap-x-72 gap-y-8 md:gap-y-8 md:gap-x-[35rem] px-8 md:px-16 scrollbar-hide scroll-smooth" ref={content}>
-            {obj.map(item => <li key={item.id} className="grid md:grid-cols-2 w-[60vw] md:w-[38vw] h-auto rounded-xl hover:skew-y-3 cursor-pointer duration-500 ease-in-out shadow-2xl">
+    <div className="carousel w-full mt-8 h-[90vh] md:h-[55vh]">
+        <ul className="grid grid-flow-col md:grid-rows-1 overflow-x-auto h-full justify-start w-full gap-8 px-8 md:px-16 scrollbar-hide scroll-smooth py-16" ref={content}>
+            {obj.map(item => <li key={item.id} className="overflow-clip grid md:grid-cols-2 w-[54vw] md:w-[38vw] h-auto md:h-[220px] rounded-xl hover:skew-y-3 cursor-pointer duration-500 ease-in-out shadow-2xl">
                 <div className="h-full">
                     <img src={item.img} className="block object-cover"></img>
                 </div>
