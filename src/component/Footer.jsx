@@ -4,13 +4,13 @@ import { FaDiscord, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"
 const Footer = () => {
   return (
     <footer className="w-full mt-4">
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-4 place-content-center content-center">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-y-2">
 
-            <div className="flex justify-around items-start">
+            <div className="flex justify-between px-8 md:px-0 md:justify-around items-start">
 
                 <div className="flex flex-col gap-4">
                     <h1 className="text-primary font-bold font-poppins">Cargo</h1>
-                    <div className="flex items-center justify-around gap-4">
+                    <div className="flex items-center justify-around gap-4 flex-col md:flex-row">
                         <FaDiscord className="text-xl font-bold hover:text-purple-800 cursor-pointer"/>
                         <FaFacebook className="text-xl font-bold hover:text-blue-600 cursor-pointer"/>
                         <FaTwitter className="text-xl font-bold hover:text-blue-400 cursor-pointer"/>
@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
 
 
-            <div className="flex justify-around items-start">
+            <div className="flex justify-between px-8 md:px-0 md:justify-around items-start">
 
                 <div>
                     <h1 className="font-bold text-sm text-black mb-4">About Us</h1>

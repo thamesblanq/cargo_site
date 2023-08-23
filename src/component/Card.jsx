@@ -94,14 +94,14 @@ const Card = () => {
 
 
   return (
-    <div className="carousel w-full mt-8 h-[80%]">
-        <ul className="flex items-center overflow-x-auto justify-start w-full gap-8 px-4 scrollbar-hide scroll-smooth" ref={content}>
-            {obj.map(item => <li key={item.id} className="w-[800px] h-auto rounded-xl hover:scale-105 cursor-pointer duration-500 ease-in-out shadow-xl">
-                <div>
-                    <img src={item.img}></img>
+    <div className="carousel w-full mt-8 h-[70%]">
+        <ul className="grid  grid-cols-3 md:grid-cols-3 md:grid-rows-1 overflow-x-auto h-[90%] justify-start w-full gap-x-64 gap-y-8 md:gap-y-8 md:gap-x-[45rem] px-8 md:px-16 scrollbar-hide scroll-smooth" ref={content}>
+            {obj.map(item => <li key={item.id} className="grid md:grid-cols-2 w-[50vw] h-auto rounded-xl hover:scale-100 cursor-pointer duration-500 ease-in-out shadow-xl">
+                <div className="h-full">
+                    <img src={item.img} className="block object-cover"></img>
                 </div>
 
-                <div className="p-8">
+                <div className="px-2 py-2">
                     <p className="text-xs text-gray-500 font-roboto">{item.date}</p>
                     <h1 className="font-semibold text-sm text-black">{item.heading}</h1>
                     <p className="font-poppins text-xs text-gray-500">{item.para}</p>

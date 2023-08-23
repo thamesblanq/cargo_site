@@ -35,8 +35,8 @@ function App() {
       {
         isLoading && (
           <>
-            <div className="w-full min-h-screen bg-white flex flex-col items-center justify-center px-4 md:px-0 overflow-hidden">
-                <div className="bg-[#F9F9F9] w-full min-h-screen px-4">
+            <div className="w-full min-h-screen bg-white flex flex-col items-center justify-center px-2 md:px-0 overflow-hidden scroll-smooth">
+                <div className="bg-[#F9F9F9] w-full min-h-screen px-2 md:px-4 scroll-smooth">
                     <Header />
                     <Section />
                 </div>

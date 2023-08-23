@@ -42,7 +42,7 @@ const Content = () => {
         </div>
       </section>
 
-      <section className='hidden w-full my-8 md:flex items-center justify-center h-screen'>
+      <section className='hidden w-full my-8 md:flex items-center justify-center h-[60vh]'>
         <div className='hidden md:flex items-center justify-center gap-8 bg-primary w-[80%] rounded-lg px-8 py-4 relative h-[70%] overflow-hidden'>
             <div className='relative z-10 h-auto w-[50%]'>
               <img src={phone} className='block absolute -bottom-[240px] left-[100px]'></img>
@@ -66,7 +66,7 @@ const Content = () => {
         </div>
       </section>
 
-      <section className='w-full my-4 h-screen mt-8'>
+      <section className='w-full my-4 h-screen md:h-[80%] mt-8'>
         <div className='flex flex-col-reverse md:flex-row items-center justify-around md:gap-4'>
             <div>
                   <img src={picThree}></img>
@@ -83,7 +83,7 @@ const Content = () => {
       <section className='w-full px-4 mt-24'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 md:w-[80%] mx-auto place-content-center'>
 
-          <div className='flex items-center justify-center flex-col rounded-lg p-8 h-screen md:h-auto'>
+          <div className='flex items-center justify-center flex-col rounded-lg p-8 h-[50vh] md:h-auto'>
             <h1 className='text-primary font-bold text-sm md:text-xl mb-2 font-poppins'>What makes us stand out</h1>
             <p className='text-xs md:text-sm mb-2 font-poppins'>Here are few reasons why you should opt for our services ahead of others.</p>
             <button className='text-[#5A57FF] flex justify-around items-center px-2 text-xs md:text-sm md:p-4 border-2 gap-2 rounded-lg border-[#5A57FF] hover:translate-y-3 duration-500 ease-in-out'>Read More<FaBook /></button>
@@ -146,7 +146,7 @@ const Content = () => {
         <Review />
       </section>
 
-      <section className='hidden md:flex w-full my-8 items-center justify-center h-screen'>
+      <section className='hidden md:flex w-full my-8 items-center justify-center h-[50%]'>
         <div className='hidden md:flex items-center justify-center gap-8 bg-primary w-[80%] rounded-lg px-8 py-16 relative'>
             
             <div>
