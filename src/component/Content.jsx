@@ -17,7 +17,7 @@ import Review from './Review';
 const Content = () => {
    
   return (
-    <main className='w-full bg-white py-8'>
+    <main className='w-full bg-white py-8 px-2'>
       <section className='w-full my-8'>
         <div className='flex flex-col-reverse md:flex-row items-center justify-around md:gap-4 mt-16'>
             <div>
@@ -66,12 +66,12 @@ const Content = () => {
         </div>
       </section>
 
-      <section className='w-full my-4 h-screen md:h-[80%] mt-8'>
+      <section className='w-full my-4 h-screen md:h-[80%] mt-2'>
         <div className='flex flex-col-reverse md:flex-row items-center justify-around md:gap-4'>
             <div>
                   <img src={picThree}></img>
             </div>
-            <div className='md:w-[50%] h-[50vh] px-8 md:px-0 flex flex-col items-start justify-center mt-8 mb-16'>
+            <div className='md:w-[50%] h-[50vh] px-8 md:px-0 flex flex-col items-start justify-center mt-4 mb-16'>
                       <h1 className='text-primary font-bold text-3xl font-poppins md:text-5xl md:w-[60%] mb:-2 md:mb-8'>Stay updated, Every step of the way</h1>
                       <p className='w-[80%] md:w-[60%] mb-2 md:mb-8 font-poppins text-gray-500'>Our tracking system lets you follow your package’s progress from pickup to delivery, ensuring you’re always in the loop</p>
                       <Button />
@@ -84,7 +84,7 @@ const Content = () => {
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 md:w-[80%] mx-auto place-content-center'>
 
           <div className='flex items-center justify-center flex-col rounded-lg p-8 h-[50vh] md:h-auto'>
-            <h1 className='text-primary font-bold text-sm md:text-xl mb-2 font-poppins'>What makes us stand out</h1>
+            <h1 className='text-primary font-bold text-xl md:text-2xl mb-2 font-poppins'>What makes us stand out</h1>
             <p className='text-xs md:text-sm mb-2 font-poppins'>Here are few reasons why you should opt for our services ahead of others.</p>
             <button className='text-[#5A57FF] flex justify-around items-center px-2 text-xs md:text-sm md:p-4 border-2 gap-2 rounded-lg border-[#5A57FF] hover:translate-y-3 duration-500 ease-in-out'>Read More<FaBook /></button>
           </div>
