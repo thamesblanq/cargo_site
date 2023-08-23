@@ -58,7 +58,7 @@ const Footer = () => {
 
 
         <div className="flex items-center justify-center w-full h-[10vh] px-4">
-            <p className="text-black font-medium font-poppins text-xs md:text-xl">Copyright&copy; 2021-{year}. Made by Eric & design by <a href="https://www.behance.net/heritageatiba" className="underline">designMojo</a></p>
+            <p className="text-black font-medium font-poppins text-xs md:text-sm">Copyright&copy; 2021-{year}. Made by Eric & design by <a href="https://www.behance.net/heritageatiba" className="underline">designMojo</a></p>
         </div>
      
 
