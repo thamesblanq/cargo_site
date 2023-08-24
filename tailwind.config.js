@@ -17,7 +17,8 @@ export default {
       },
 
       backgroundImage: {
-        'background': "url('/src/cargo-images/background-cargo.jpg')"
+        'background': "url('/src/cargo-images/background-cargo.jpg')",
+        'loading': "url('/src/cargo-images/wall.jpg')"
       },
 
       keyframes: {

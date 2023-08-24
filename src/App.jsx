@@ -3,7 +3,7 @@ import Section from "./component/Section";
 import Content from "./component/Content";
 import Footer from "./component/Footer";
 import { useEffect, useState } from "react";
-//import Loading from "./component/Loading";
+import Loading from "./component/Loading";
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -28,15 +28,16 @@ function App() {
   return (
       <>
       {!isLoading && 
-          <div className="flex items-center justify-center w-full min-h-screen bg-black animate-bounce duration-500 ease-in-out">
-                  <p className="font-bold text-4xl font-roboto text-white">^_^</p>
+          <div className="flex items-center justify-center  flex-col w-full min-h-screen bg-slate-950">
+                  <Loading type={'bubbles'} color={'#ffffff'} />
+                  <p className="text-white font-semibold font-poppins">loading...</p>
           </div>
       }
       {
         isLoading && (
           <>
             <div className="w-full min-h-screen bg-white flex flex-col items-center justify-center md:px-0 overflow-hidden scroll-smooth">
-                <div className="bg-[#F9F9F9] w-full min-h-screen px-2 md:px-4 scroll-smooth">
+                <div className="bg-[#F9F9F9] w-full h-auto scroll-smooth">
                     <Header />
                     <Section />
                 </div>

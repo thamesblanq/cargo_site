@@ -7,7 +7,7 @@ const Header = () => {
 
   
   return (
-    <header className="flex w-full items-center justify-between md:px-8 h-[10vh]">
+    <header className="flex w-full items-center justify-between md:px-8 h-[10vh] px-2">
         <h1 className='text-[#5A57FF]  text-2xl cursor-pointer font-bold font-poppins'>Cargo</h1>
 
         <div className='hidden md:flex gap-10 px-2'>

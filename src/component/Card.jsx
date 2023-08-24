@@ -94,17 +94,17 @@ const Card = () => {
 
 
   return (
-    <div className="carousel w-full my-4 h-[80vh] md:h-[43vh] bg-gray-200">
-        <ul className="grid grid-flow-col md:grid-rows-1 overflow-x-auto h-full  justify-start w-full gap-16 md:gap-8 px-12 md:px-16 scrollbar-hide scroll-smooth py-8" ref={content}>
-            {obj.map(item => <li key={item.id} className="overflow-clip grid md:grid-cols-2 w-[54vw] md:w-[38vw] h-auto md:h-[220px] rounded-xl hover:skew-y-3 cursor-pointer duration-500 ease-in-out shadow-2xl">
-                <div className="h-full">
+    <div className="carousel w-full my-4 h-[500px] md:h-[25vh] lg:h-[43vh] bg-gray-200">
+        <ul className="grid grid-flow-col lg:grid-rows-1 overflow-x-auto h-full  justify-start w-full gap-16 md:gap-8 px-12 md:px-16 scrollbar-hide scroll-smooth py-2 md:py-8" ref={content}>
+            {obj.map(item => <li key={item.id} className="overflow-clip grid md:grid-cols-2 w-[54vw] md:w-[61vw] lg:w-[38vw] h-[480px] md:h-[210px] lg:h-[220px] rounded-xl hover:skew-y-3 cursor-pointer duration-500 ease-in-out shadow-2xl">
+                <div>
                     <img src={item.img} className="block object-cover"></img>
                 </div>
 
-                <div className="px-2 py-2">
-                    <p className="text-xs text-gray-500 font-roboto">{item.date}</p>
-                    <h1 className="font-semibold text-sm text-black">{item.heading}</h1>
-                    <p className="font-poppins text-xs text-gray-500">{item.para}</p>
+                <div className="px-2 md:py-2">
+                    <p className="text-[10px] lg:text-xs text-gray-500 font-roboto">{item.date}</p>
+                    <h1 className="font-bold lg:font-semibold text-xs md:text-sm text-black">{item.heading}</h1>
+                    <p className="font-poppins text-[10px] lg:text-xs text-gray-500">{item.para}</p>
                 </div>
             </li>)}
         </ul>

@@ -1,17 +1,8 @@
-import { Triangle } from 'react-loader-spinner';
+import ReactLoading from 'react-loading';
 
-const Loading = () => {
-  return (
-        <Triangle
-            height="80"
-            width="80"
-            color="#4fa94d"
-            ariaLabel="triangle-loading"
-            wrapperStyle={{}}
-            wrapperClassName=""
-            visible={true}
-        />
-  )
-}
+const Loading = ({ type, color }) => (
+  <ReactLoading type={type} color={color} height={'10%'} width={'10%'} />
+);
+
 
 export default Loading
